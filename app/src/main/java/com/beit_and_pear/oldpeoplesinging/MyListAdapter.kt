@@ -14,9 +14,7 @@ class MyListAdapter(private val data: List<ListItem>) :
     }
     // ビューにデータを割り当て、ページを生成
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
-        holder.txtTitle.text = data[position].title
         holder.imgPhoto.setImageDrawable(data[position].photo)
-        holder.imgPhoto.contentDescription = data[position].title
     }
     // データの項目数を取得
     override fun getItemCount(): Int {
