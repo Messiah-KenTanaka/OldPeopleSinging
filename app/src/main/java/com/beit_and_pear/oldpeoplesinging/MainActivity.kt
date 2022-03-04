@@ -19,8 +19,8 @@ class MainActivity : AppCompatActivity() {
                 photo = ContextCompat.getDrawable(this, R.drawable.takibi_1)
             ),
             ListItem(
-                title = "一月",
-                photo = ContextCompat.getDrawable(this, R.drawable.takibi_1)
+                title = "二月",
+                photo = ContextCompat.getDrawable(this, R.drawable.yuki_2)
             ),
         )
 
