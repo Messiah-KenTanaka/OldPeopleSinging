@@ -4,5 +4,5 @@ import android.graphics.drawable.Drawable
 
 data class ListItem(
     val title: String,
-    val photo: Drawable
+    val photo: Drawable?
 )
