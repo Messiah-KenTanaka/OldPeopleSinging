@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
             ),
             ListItem(
                 icon = ContextCompat.getDrawable(this, R.drawable.icons8_2),
-                photo = ContextCompat.getDrawable(this, R.drawable.haruyokoi_2)
+                photo = ContextCompat.getDrawable(this, R.drawable.yuki_2)
             ),
             ListItem(
                 icon = ContextCompat.getDrawable(this, R.drawable.icons8_3),
