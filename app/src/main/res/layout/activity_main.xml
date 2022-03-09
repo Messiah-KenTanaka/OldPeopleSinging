@@ -40,6 +40,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tabs" />
 
+<!--    ユニットID本物  ca-app-pub-3324255919208405/6762337987-->
     <com.google.android.gms.ads.AdView
         android:id="@+id/adView"
         android:layout_width="0dp"
@@ -47,7 +48,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         app:adSize="SMART_BANNER"
-        app:adUnitId="ca-app-pub-3940256099942544/6300978111"
+        app:adUnitId="ca-app-pub-3324255919208405/6762337987"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"></com.google.android.gms.ads.AdView>

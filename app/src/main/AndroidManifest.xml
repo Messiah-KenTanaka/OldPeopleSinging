@@ -20,9 +20,10 @@
             </intent-filter>
         </activity>
         <!-- Sample AdMob app ID: ca-app-pub-3940256099942544~3347511713 -->
+        <!-- アプリID本物   ca-app-pub-3324255919208405~9073339385-->
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-3940256099942544~3347511713"/>
+            android:value="ca-app-pub-3324255919208405~9073339385"/>
     </application>
 
 </manifest>

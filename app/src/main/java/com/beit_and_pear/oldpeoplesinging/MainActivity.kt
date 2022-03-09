@@ -33,8 +33,8 @@ class MainActivity : AppCompatActivity() {
         val adView = AdView(this)
 
         adView.adSize = AdSize.SMART_BANNER
-
-        adView.adUnitId = "ca-app-pub-3940256099942544/6300978111"
+//      ユニットID本物  ca-app-pub-3324255919208405/6762337987
+        adView.adUnitId = "ca-app-pub-3324255919208405/6762337987"
 
 //        // ログ
 //        Log.i("MyActivity", "OnCreate")
