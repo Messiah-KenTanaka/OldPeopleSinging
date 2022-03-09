@@ -6,18 +6,38 @@ import android.util.Log
 import android.widget.TableLayout
 import androidx.core.content.ContextCompat
 import androidx.viewpager2.widget.ViewPager2
+import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.AdSize
+import com.google.android.gms.ads.AdView
+import com.google.android.gms.ads.MobileAds
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 
 class MainActivity : AppCompatActivity() {
+
+    lateinit var mAdView : AdView
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         // タイトルバーを非表示
         supportActionBar?.hide()
 
-        // ログ
-        Log.i("MyActivity", "OnCreate")
+        // 広告
+        MobileAds.initialize(this) {}
+
+        mAdView = findViewById(R.id.adView)
+        val adRequest = AdRequest.Builder().build()
+        mAdView.loadAd(adRequest)
+
+        val adView = AdView(this)
+
+        adView.adSize = AdSize.SMART_BANNER
+
+        adView.adUnitId = "ca-app-pub-3940256099942544/6300978111"
+
+//        // ログ
+//        Log.i("MyActivity", "OnCreate")
 
         // ページで利用するデータを準備
         val data = listOf(
